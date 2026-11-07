@@ -3,22 +3,27 @@ body {
 	background-color: #eaf4fc;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
 }
-.contenedor {
+h1 {
+	text-align: center;
+	color: #527fa5;
+	margin-top: 35px;
+}
+h1 span {
+	color: #91bde0;
+}
+.contenido {
 	background-color: white;
 	width: 350px;
-	padding: 30px;
-	border-radius: 15px;
+	margin: 30px auto;
+	padding: 25px;
+	border: 1px solid #c5ddef;
+	border-radius: 10px;
 	text-align: center;
-	box-shadow: 2px 2px 10px #b8d5ed;
 }
 h2 {
 	color: #568bb8;
-	margin-bottom: 25px;
+	text-align: center;
 }
 label {
 	display: block;
@@ -29,30 +34,39 @@ label {
 input {
 	width: 100%;
 	padding: 10px;
-	margin-bottom: 15px;
 	border: 1px solid #b8d5ed;
-	border-radius: 7px;
+	border-radius: 5px;
 	box-sizing: border-box;
+	margin-bottom: 15px;
 }
 button {
+	width: 100%;
+	padding: 10px;
 	background-color: #91bde0;
 	color: white;
-	border: none;
-	padding: 10px;
-	width: 100%;
-	border-radius: 7px;
+	border: 0;
+	border-radius: 5px;
 	font-size: 15px;
-	cursor: pointer;
 }
 button:hover {
 	background-color: #659bc8;
 }
 a {
-	display: block;
-	margin-top: 20px;
 	color: #568bb8;
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
+}
+.imagen {
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	margin: 10px auto;
+	display: block;
+}
+.mensaje {
+	color: #527797;
+	text-align: center;
+	margin-top: 15px;
 }
