@@ -6,7 +6,7 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="stilo.css">
 	<title>Inicio de sesión</title>
 </head>
 <body>
@@ -37,14 +37,14 @@ session_start();
 				if (password_verify($password, $hash)) {
 					//mostrar el mensaje cuando el acceso sea autorizado
 					echo "<div class='mensaje'>";
-					echo "<img src='pasa.jpg' class='imagen'>";
+					echo "<img src='imagenes/pasa.jpg' class='imagen-pasa' alt='Acceso autorizado'>";
 					echo "¡Bienvenido al sistema, " . $_SESSION['usuarios'][$usuario]['nombre'] . "!";
 					echo "</div>";
 				}
 				else {
 					//mostrar el mensaje cuando la contraseña sea incorrecta
 					echo "<div class='mensaje'>";
-					echo "<img src='dudo.jpg' class='imagen'>";
+					echo "<img src='imagenes/dudo.jpg' class='imagen-dudo' alt='Contraseña incorrecta'>";
 					echo "Contraseña incorrecta.";
 					echo "</div>";
 				}
@@ -52,7 +52,7 @@ session_start();
 			else {
 				//mostrar el mensaje cuando el usuario no este registrado
 				echo "<div class='mensaje'>";
-				echo "<img src='no.jpg' class='imagen'>";
+				echo "<img src='imagenes/no.jpg' class='imagen-no' alt='Acceso rechazado'>";
 				echo "Usuario no registrado. Acceso rechazado.";
 				echo "</div>";
 			}
@@ -62,4 +62,4 @@ session_start();
 		<a href="registro.php">Registrar un nuevo usuario</a>
 	</div>
 </body>
-</html>
+</html

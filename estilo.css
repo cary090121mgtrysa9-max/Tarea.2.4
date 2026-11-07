@@ -1,17 +1,21 @@
+/*darle estilo al fondo de la pagina*/
 body {
 	font-family: Arial;
 	background-color: #eaf4fc;
 	margin: 0;
 	padding: 0;
 }
+/*acomodar el titulo principal*/
 h1 {
 	text-align: center;
 	color: #527fa5;
 	margin-top: 35px;
 }
+/*cambiar el color de una parte del titulo*/
 h1 span {
 	color: #91bde0;
 }
+/*crear el recuadro blanco del formulario*/
 .contenido {
 	background-color: white;
 	width: 350px;
@@ -21,16 +25,19 @@ h1 span {
 	border-radius: 10px;
 	text-align: center;
 }
+/*darle estilo al subtitulo*/
 h2 {
 	color: #568bb8;
 	text-align: center;
 }
+/*acomodar los nombres de los campos*/
 label {
 	display: block;
 	text-align: left;
 	color: #527797;
 	margin-bottom: 5px;
 }
+/*darle estilo a las cajas donde se escriben los datos*/
 input {
 	width: 100%;
 	padding: 10px;
@@ -39,6 +46,7 @@ input {
 	box-sizing: border-box;
 	margin-bottom: 15px;
 }
+/*darle estilo al boton*/
 button {
 	width: 100%;
 	padding: 10px;
@@ -47,26 +55,55 @@ button {
 	border: 0;
 	border-radius: 5px;
 	font-size: 15px;
+	cursor: pointer;
 }
+/*cambiar el color del boton*/
 button:hover {
 	background-color: #659bc8;
 }
+/*darle estilo a los enlaces*/
 a {
 	color: #568bb8;
 	text-decoration: none;
 }
+/*mostrar una linea al pasar el cursor por el enlace*/
 a:hover {
 	text-decoration: underline;
 }
-.imagen {
-	width: 100px;
-	height: 100px;
-	object-fit: contain;
-	margin: 10px auto;
-	display: block;
-}
+/*acomodar los mensajes*/
 .mensaje {
 	color: #527797;
 	text-align: center;
 	margin-top: 15px;
+}
+/*acomodar todas las imagenes de los mensajes*/
+.mensaje img {
+	display: block;
+	margin: 15px auto;
+	object-fit: contain;
+}
+/*darle tamaño a la imagen de registro correcto*/
+.imagen-aceptado {
+	width: 100px;
+	height: 100px;
+}
+/*darle tamaño a la imagen para añadir otro registro*/
+.imagen-anade {
+	width: 80px;
+	height: 80px;
+}
+/*darle tamaño a la imagen de contraseña incorrecta*/
+.imagen-dudo {
+	width: 100px;
+	height: 100px;
+}
+/*darle tamaño a la imagen de acceso rechazado*/
+.imagen-no {
+	width: 100px;
+	height: 100px;
+}
+/*darle tamaño a la imagen de acceso correcto*/
+.imagen-pasa {
+	width: 100px;
+	height: 100px;
 }

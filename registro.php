@@ -54,18 +54,18 @@ if (!isset($_SESSION['usuarios'])) {
 			else {
 				//convertir la contraseña en un hash para protegerla
 				$hash = password_hash($password, PASSWORD_DEFAULT);
-				//guardar el nombre y la contraseña protegida en el arreglo
+				//guardar los datos del usuario en el arreglo
 				$_SESSION['usuarios'][$usuario] = array(
 					'nombre' => $nombre,
 					'hash' => $hash
 				);
 				//mostrar el mensaje cuando el registro sea correcto
 				echo "<div class='mensaje'>";
-				echo "<img src='aceptado.jpg' class='imagen'>";
+				echo "<img src='imagenes/aceptado.jpg' class='imagen-aceptado' alt='Registro correcto'>";
 				echo "¡Usuario registrado correctamente!";
 				echo "<br><br>";
-				//mostrar la opcion para agregar otro registro
-				echo "<img src='anade.jpg' class='imagen'>";
+				//mostrar la imagen para añadir otro registro
+				echo "<img src='imagenes/anade.jpg' class='imagen-anade' alt='Añadir registro'>";
 				echo "<a href='registro.php'>Añadir otro registro</a>";
 				echo "</div>";
 			}
